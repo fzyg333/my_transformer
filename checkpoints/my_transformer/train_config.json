@@ -1,0 +1,25 @@
+{
+  "batch_size": 32,
+  "num_steps": 1000,
+  "dataset_dir": "result",
+  "train_data_path": "result/train.bin",
+  "eval_data_path": "result/eval.bin",
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "weight_decay": 1e-05,
+  "max_lr": 0.0003,
+  "min_lr": 1e-05,
+  "warmup_steps": 50,
+  "max_grad_norm": 1.0,
+  "wandb_logging": false,
+  "eval_log_interval": 50,
+  "sampling_log_interval": 200,
+  "model_name": "my_transformer",
+  "save_checkpoint_dir": "checkpoints",
+  "debug_mode": false,
+  "use_mixed_precision": true,
+  "log_moe_every": 50,
+  "seed": 2026
+}
